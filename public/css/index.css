@@ -113,3 +113,84 @@ input:checked+label::before {
 
 
 /* Button styles*/
+button {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(151, 151, 151, 1);
+    color: #434A59;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 40px;
+    outline: none;
+    padding: 12px 14px;
+    /* width: 100px; */
+    text-align: center;
+}
+
+.btn:nth-child(18):hover {
+    
+}
+
+.button-grid .btn:nth-child(17),
+.button-grid .btn:nth-child(18) {
+    grid-column: span 2;
+
+}
+
+/*Light-mode styles*/
+.light-mode {
+    /* background: #E6E6E6; */
+    color: #36362C;
+}
+
+.light-mode .heading,
+.light-mode .theme-wrapper,
+.light-mode .display {
+    color: #36362C;
+}
+
+.light-mode .toggle label {
+    background: #D2CDCD;
+}
+
+.light-mode .toggle label::before {
+    background: #D03F2F;
+}
+
+.light-mode .display {
+    background: #EEEEEE;
+    color: #36362C;
+}
+
+.light-mode .button-grid {
+    background: #D2CDCD;
+}
+
+.light-mode .button-grid .btn:nth-child(4),
+.light-mode .button-grid .btn:nth-child(17),
+.light-mode .button-grid .btn:nth-child(18) {
+    color: #fff;
+}
+
+.light-mode .button-grid .btn:nth-child(4),
+.light-mode .button-grid .btn:nth-child(17) {
+    background: #378187;
+    box-shadow: 0px 5px 0px 0px rgb(27, 95, 101);
+}
+
+.light-mode .button-grid .btn:nth-child(4):hover,
+.light-mode .button-grid .btn:nth-child(17):hover {
+    background: #62B5BC;
+    box-shadow: 0px 5px 0px 0px hsl(185, 58%, 25%);
+}
+
+
+.light-mode .button-grid .btn:nth-child(18) {
+    background: #C85402;
+    box-shadow: 0px 5px 0px 0px rgb(137, 57, 1);
+}
+
+.light-mode .btn:nth-child(18):hover {
+    background: #FF8A38;
+    box-shadow: 0px 5px 0px 0px rgb(147, 38, 26);
+}
