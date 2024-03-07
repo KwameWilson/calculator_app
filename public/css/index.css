@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+/*General styles*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.heading {
+    letter-spacing: -.53px;
+}
+
+label[for='toggle'] {
+    cursor: pointer;
+}
+
+.display {
+    border-radius: 10px;
+    font-size: 56px;
+    padding: 40px 32px;
+    margin-bottom: 24px;
+    height: 128px;
+    text-align: right;
+    width: 540px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 24px;
+    /* background: #242D44; */
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.theme-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 0 5px 88px;
+    width: 57px;
+    font-size: 12px;
+}
+
+.toggle-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-flex label:first-child {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.toggle {
+    margin-left: 28px;
+}
+
+.toggle input {
+    /* opacity: 0; */
+    display: none;
+}
+
+.toggle label {
+    border-radius: 13px;
+    display: inline-block;
+    width: 71px;
+    height: 26px;
+    position: relative;
+}
+
+.toggle label::before {
+    /* background: #000; */
+    border-radius: 50%;
+    content: "";
+    height: 16px;
+    margin: 5px;
+    position: absolute;
+    width: 16px;
+}
+
+input:checked+label {
+    background: #D2CDCD;
+}
+
+input:checked+label::before {
+    transform: translateX(20px);
+    background: #C85402;
+}
+
+
+/* Button styles*/
