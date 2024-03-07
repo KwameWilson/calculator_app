@@ -127,9 +127,7 @@ button {
     text-align: center;
 }
 
-.btn:nth-child(18):hover {
-    
-}
+.btn:nth-child(18):hover {}
 
 .button-grid .btn:nth-child(17),
 .button-grid .btn:nth-child(18) {
@@ -193,4 +191,120 @@ button {
 .light-mode .btn:nth-child(18):hover {
     background: #FF8A38;
     box-shadow: 0px 5px 0px 0px rgb(147, 38, 26);
+}
+
+/*Dark-mode styles*/
+
+.dark-mode {
+    background: #3A4663;
+    color: #434A59;
+}
+
+.dark-mode .heading,
+.dark-mode .theme-wrapper,
+.dark-mode .display {
+    color: #fff;
+}
+
+.dark-mode .toggle label {
+    background: #242D44;
+}
+
+.dark-mode .toggle label::before {
+    background: #D03F2F;
+}
+
+.dark-mode .display {
+    background: #181F33;
+}
+
+.dark-mode .button-grid {
+    background: #242D44;
+}
+
+.dark-mode .button-grid .btn:nth-child(4),
+.dark-mode .button-grid .btn:nth-child(17),
+.dark-mode .button-grid .btn:nth-child(18) {
+    color: #fff;
+}
+
+.dark-mode .button-grid .btn:nth-child(4),
+.dark-mode .button-grid .btn:nth-child(17) {
+    background: #647198;
+    box-shadow: 0px 5px 0px 0px rgb(64, 78, 114);
+}
+
+.dark-mode .button-grid .btn:nth-child(4):hover,
+.dark-mode .button-grid .btn:nth-child(17):hover {
+    background: rgb(99, 112, 151);
+    box-shadow: 0px 5px 0px 0px rgb(64, 78, 114);
+}
+
+.dark-mode .button-grid .btn:nth-child(18) {
+    background: #D03F2F;
+    box-shadow: 0px 5px 0px 0px rgb(147, 38, 26);
+}
+
+.dark-mode .btn:nth-child(18):hover {
+    background: #F96B5B;
+    box-shadow: 0px 5px 0px 0px rgb(147, 38, 26);
+}
+
+/*Alt-dark-mode*/
+.alt-dark-mode {
+    background: #17062A;
+    color: #FFE53D;
+}
+
+.alt-dark-mode .heading,
+.alt-dark-mode .theme-wrapper,
+.alt-dark-mode .display,
+.alt-dark-mode button {
+    color: #FFE53D;
+}
+
+.alt-dark-mode .toggle label,
+.alt-dark-mode .display {
+    background: #1E0936;
+}
+
+.alt-dark-mode .toggle label::before {
+    background: #93FFF8;
+}
+
+.alt-dark-mode .button-grid {
+    background: #1E0936;
+}
+
+.alt-dark-mode button {
+    background: #331C4D;
+    box-shadow: 0px 5px 0px 0px rgb(188, 21, 244);
+}
+
+.alt-dark-mode button:hover {
+    background: #6C34AC;
+}
+
+.alt-dark-mode .button-grid .btn:nth-child(4),
+.alt-dark-mode .button-grid .btn:nth-child(17) {
+    color: #fff;
+}
+
+.alt-dark-mode .button-grid .btn:nth-child(4),
+.alt-dark-mode .button-grid .btn:nth-child(17) {
+    background: #56077C;
+    box-shadow: 0px 5px 0px 0px rgb(188, 21, 244);
+}
+
+.alt-dark-mode .button-grid .btn:nth-child(4):hover,
+.alt-dark-mode .button-grid .btn:nth-child(17):hover {
+    background: #8631AF;
+    box-shadow: 0px 5px 0px 0px rgb(188, 21, 244);
+}
+
+
+.alt-dark-mode .button-grid .btn:nth-child(18) {
+    background: #00DED0;
+    color: #1A2327;
+    box-shadow: 0px 5px 0px 0px #6cf9f2;
 }
