@@ -7,7 +7,72 @@
     <script src="script.js" defer></script>
     <title>Calculator App</title>
 </head>
-<body>
-        
+<body class="light-mode">
+    <div>
+
+        <div class="header-flex">
+            <h1 class="heading">
+                calc
+            </h1>
+          
+            <div class="theme-wrapper">
+                <div class="theme-indicator">
+                    <label class="mode1" for="toggle"><p>1</p></label>
+                    <label class="mode2" for="toggle"><p>2</p></label>
+                    <label class="mode3" for="toggle"><p>3</p></label>
+                </div>
+
+                <div class="toggle-flex">
+                    <label for="toggle">Theme</label>
+                    <div class="toggle">
+                        <input type="radio" name="toggle" id="toggle" />
+                        <label for="toggle"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <ResultsField />
+  
+        <div class="button-grid">
+          <Button
+            value="7" />
+          <Button
+            value="8" />
+          <Button
+            value="9" />
+          <Button
+            value="DEL" />
+          <Button
+            value="4" />
+          <Button
+            value="5" />
+          <Button
+            value="6" />
+          <Button
+            value="+" />
+          <Button
+            value="1" />
+          <Button
+            value="2" />
+          <Button
+            value="3" />
+          <Button
+            value="-" />
+          <Button
+            value="." />
+          <Button
+            value="0" />
+          <Button
+            value="/" />
+          <Button
+            value="x" />
+          <Button
+            value="RESET" />
+          <Button
+            value="=" />
+        </div>
+  
+      </div>  
 </body>
 </html>
