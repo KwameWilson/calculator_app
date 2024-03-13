@@ -32,47 +32,65 @@
             </div>
         </div>
   
-        <ResultsField />
-  
-        <div class="button-grid">
-          <Button
-            value="7" />
-          <Button
-            value="8" />
-          <Button
-            value="9" />
-          <Button
-            value="DEL" />
-          <Button
-            value="4" />
-          <Button
-            value="5" />
-          <Button
-            value="6" />
-          <Button
-            value="+" />
-          <Button
-            value="1" />
-          <Button
-            value="2" />
-          <Button
-            value="3" />
-          <Button
-            value="-" />
-          <Button
-            value="." />
-          <Button
-            value="0" />
-          <Button
-            value="/" />
-          <Button
-            value="x" />
-          <Button
-            value="RESET" />
-          <Button
-            value="=" />
+        <div data-operand class="display">
+            <!-- <input class="display" type="number" name="display" id="display" readonly> -->
         </div>
   
-      </div>  
+        <div class="button-grid">
+            <button class="btn" data-number>
+                7
+            </button>
+            <button class="btn" data-number>
+                8
+            </button>
+            <button class="btn" data-number>
+                9
+            </button>
+            <button class="btn" data-delete>
+                DEL
+            </button>
+            <button class="btn" data-number>
+                4
+            </button>
+            <button class="btn" data-number>
+                5
+            </button>
+            <button class="btn" data-number>
+                6
+            </button>
+            <button class="btn" data-operation>
+                +
+            </button>
+            <button class="btn" data-number>
+                1
+            </button>
+            <button class="btn" data-number>
+                2
+            </button>
+            <button class="btn" data-number>
+                3
+            </button>
+            <button class="btn" data-operation>
+                -
+            </button>
+            <button class="btn" data-number>
+                .
+            </button>
+            <button class="btn" data-number>
+                0
+            </button>
+            <button class="btn" data-operation>
+                /
+            </button>
+            <button class="btn" data-operation>
+                x
+            </button>
+            <button class="btn" data-reset>
+                RESET
+            </button>
+            <button class="btn" data-equals>
+                =
+            </button>
+        </div>  
 </body>
 </html>

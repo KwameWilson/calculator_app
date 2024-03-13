@@ -44,6 +44,8 @@ label[for='toggle'] {
     height: 128px;
     text-align: right;
     width: 540px;
+    border: 0;
+    outline: 0;
 }
 
 .button-grid {
@@ -109,6 +111,7 @@ input:checked+label {
 input:checked+label::before {
     transform: translateX(20px);
     background: #C85402;
+    transition: transform .2s ease-out;
 }
 
 
