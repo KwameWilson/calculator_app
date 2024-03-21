@@ -3,10 +3,9 @@ const body = document.querySelector('body');
 const toggle = document.querySelector('.toggle label');
 const display = document.querySelector('[data-operand]');
 const keys = document.querySelectorAll('[data-number]');
-const dataOps = document.querySelectorAll('[data-operation]');
-const equalButton = document.querySelector('[data-equals]');
-const deleteButton = document.querySelector('[data-delete]');
-const resetButton = document.querySelector('[data-reset]');
+// const dataOps: HTMLButtonElement = document.querySelectorAll('[data-operation]');
+// const equalButton: HTMLButtonElement = document.querySelector('[data-equals]');
+// const deleteButton:HTMLButtonElement = document.querySelector('[data-delete]');
 // class Calculator {
 //     constructor(display) {
 //         this.display = display;
@@ -34,8 +33,41 @@ Array.from(keys).forEach(key => {
     key.addEventListener('click', (e) => {
         // let target: any = e.target.innerText;
         // console.log(target);
-        display.innerText += e.target.innerText;
+        switch (e.target.innerText) {
+            case 'RESET':
+                display.innerText = "";
+                break;
+            case 'DEL':
+                if (display.innerText) {
+                    display.innerText = display.innerText.slice(0, -1);
+                }
+                break;
+            case '=':
+                try {
+                    const evaluation = eval(display.innerText);
+                    display.innerText = evaluation.toFixed(2);
+                }
+                catch (error) {
+                    display.innerText = 'Error!';
+                }
+                break;
+            default:
+                display.innerText += e.target.innerText;
+        }
     });
+});
+document.body.addEventListener('keypress', (e) => {
+    console.log(typeof (e.keyCode));
+    const numericKeypadKeyCodes = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 106, 107, 109, 110, 111, 187];
+    if (numericKeypadKeyCodes.includes(e.keyCode)) {
+        const appendToDisplay = () => {
+            display.innerText += e.key;
+        };
+        appendToDisplay();
+    }
+    else if (e.keyCode = 187) {
+        display.innerText = eval(display.innerText);
+    }
 });
 toggle.addEventListener("click", () => {
     // console.log(e.target);
@@ -71,9 +103,3 @@ toggle.addEventListener("click", () => {
         lightMode();
     }
 });
-// const clearDisplay = (): void => {
-//     display.value = '';
-// }
-// clearDisplay()
-// const appendToDisplay = (): void => {
-// }
